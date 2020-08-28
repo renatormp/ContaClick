@@ -20,4 +20,9 @@ export default StyleSheet.create({
     fontSize: 35,
     fontWeight: "bold"
   },
+  buttonView: {
+    flexDirection: 'row',  
+    justifyContent: 'space-around', 
+    alignItems: 'center'
+  },
 });

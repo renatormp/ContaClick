@@ -20,13 +20,13 @@ export default ({ initial = 0, add = 1, decrease = 1 }) => {
     <View style={styles.app}>
       <Text style={styles.title}>Seja Bem Vindo ao ContaClick</Text >
 
-      <View style={{ flexDirection: 'row', width: 300, justifyContent: 'space-around', alignItems: 'center' }}>
+      <View style={[styles.buttonView, { width: 300 }]}>
 	    <Button title="Subtrair" onPress={subtract} color="#A20A20"></Button>
 	    <Text style={{ fontSize }}>{number}</Text>
 	    <Button title="Somar" onPress={increment} color = "#080"></Button>
       </View>
       
-      <View style={{ flexDirection: 'row', width: 350, justifyContent: 'space-around', alignItems: 'center' }}>
+      <View style={[styles.buttonView, { width: 350 }]}>
       <Button title="Zerar" onPress={zero}></Button>
       <Button title="Fonte" onPress={changeFontSize}></Button>
       </View>
